@@ -5,11 +5,11 @@
 # 如果这个时候捡漏捡到的话，也是可以付款成功的，也就是说，捡漏+候补，可以最大程度提升抢票成功率
 
 # 刷票模式：1=刷票 2=候补+刷票
-TICKET_TYPE = 1
+TICKET_TYPE = 2
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2020-01-18"
+    "2023-09-28"
 ]
 
 # 填入需要购买的车次(list)，"G1353"
@@ -18,10 +18,10 @@ STATION_DATES = [
 STATION_TRAINS = []
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = "广州南"
+FROM_STATION = "哈尔滨西"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = "隆回"
+TO_STATION = "北京丰台"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -33,7 +33,7 @@ TO_STATION = "隆回"
 # "硬座",
 # "无座",
 # "动卧",
-SET_TYPE = ["二等座"]
+SET_TYPE = ["硬座"]
 
 # 当余票小于乘车人，如果选择优先提交，则删减联系人和余票数一致在提交
 # bool
@@ -42,11 +42,11 @@ IS_MORE_TICKET = True
 # 乘车人(list) 多个乘车人ex:
 # "张三",
 # "李四"
-TICKET_PEOPLES = []
+TICKET_PEOPLES = ["旷文军","丁思文"]
 
 # 12306登录账号
-USER = ""
-PWD = ""
+USER = "kisspig123"
+PWD = "kwjtxdyjsws1314"
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5
@@ -81,10 +81,10 @@ HTTP_TYPE = "http"
 #  host: "smtp.qq.com"
 EMAIL_CONF = {
     "IS_MAIL": True,
-    "email": "",
-    "notice_email_list": "",
-    "username": "",
-    "password": "",
+    "email": "2780107868@qq.com",
+    "notice_email_list": "2780107868@qq.com",
+    "username": "旷文军",
+    "password": "bhokpihbgucfdeac",
     "host": "smtp.qq.com",
 }
 
@@ -102,7 +102,7 @@ ORDER_TYPE = 2
 
 # 下单模式 1 为预售，整点刷新，刷新间隔0.1-0.5S, 然后会校验时间，比如12点的预售，那脚本就会在12.00整检票，刷新订单
 #         2 是捡漏，捡漏的刷新间隔时间为0.5-3秒，时间间隔长，不容易封ip
-ORDER_MODEL = 1
+ORDER_MODEL = 2
 
 # 是否开启代理, 0代表关闭， 1表示开始
 # 开启此功能的时候请确保代理ip是否可用，在测试放里面经过充分的测试，再开启此功能，不然可能会耽误你购票的宝贵时间
